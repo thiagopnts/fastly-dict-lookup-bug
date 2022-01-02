@@ -1,0 +1,13 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["code@thi.ag"]
+description = "Local edge dict look up bug"
+language = "rust"
+manifest_version = 2
+name = "dict-lookup"
+service_id = ""
+
+[local_server.dictionaries.edge_dict]
+file = "./dict.json"
+format = "json"
